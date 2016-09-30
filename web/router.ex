@@ -18,6 +18,7 @@ defmodule ChoreSchedule.Router do
 
     # get "/", PageController, :index
     get "/", MonthController, :index
+    get "/week/:time", WeekController, :index
   end
 
   # Other scopes may use custom stacks.

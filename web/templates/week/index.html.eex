@@ -1,0 +1,3 @@
+<div class="jumbotron">
+    <h2>We're in the <%= @time %> view!</h2>
+</div>

@@ -1,3 +1,18 @@
 <div class="jumbotron">
-    <h2>We're in the <%= @time %> view!</h2>
+    <h2>We're in the week view!</h2>
+</div>
+
+<div class="week_container">
+    <div class="day">
+        <%= for day_name <- show_day_name do %>
+        <div class="day__title">
+            <h4>showing</h4>
+        </div>
+        <%= end %>
+        <%= for week <- show_day do %>
+            <div class="day__date">
+                <%= week %>
+            </div>
+        <%= end %>
+    </div>
 </div>
